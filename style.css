@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    height: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* The navigation bar */
+
+  .navbar {
+    background-color: rgba(5, 5, 63, 0.808);
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* The header containing personal image and background */
+  header {
+    background-image: url('tech\ background.jpg');
+    background-size: 100% 70%;
+    background-repeat: no-repeat;
+  }
+  .personalImg {
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    display: block;
+  }
+
+  /* The main personal info under the photo */
+
+  .personalInf {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .personalInf a, h2 {
+    background-color: rgba(5, 5, 63, 0.747);
+    border-radius: 40%;
+    font-size: 20px;
+    text-decoration:none;
+    padding: 10px;
+    color: lavender;
+    text-align: center;
+  }
+
+  /* The vertical flexbox items ( about, Basic Info, Professional skills ) */
+
+  .FlexboxContainer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .FlexboxItem {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0 12px;
+    width: 270px;
+    flex-grow: 1;
+    margin: 10px;
+  }
+  .FlexboxItem table {
+    text-align: left;
+    width: 80%;
+    padding: 8px;
+  }
+  .FlexboxItem th, .FlexboxItem td {
+    padding: 4px;
+  }
+  span {
+    float: right;
+  }
+  hr { 
+    margin-left: 0;
+    border-width: 8px;
+  }
+  .html, .c, .ms {
+    width: 50%;
+  }
+  .CSS {
+    width: 40%;
+  }
+  .Photoshop {
+    width: 75%;
+  }
+
+  /* The horizontal flexbox items ( Education ) */
+
+  .flexboxcontainer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .flexboxitem1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 600px;
+    margin: 20px;
+    max-height: fit-content;
+  }
+  
+  .flexboxitem1 p {
+   text-align: center;
+  }
+
+  /* The 2 grids including their items ( Work Experience) */
+
+  .GridContainer {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px 40px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: max-content;
+    text-align: center;
+  }
+  .GridItem1 {
+    background-color: rgba(5, 5, 63, 0.747);
+    color: lavender;
+    font-size: 20px;
+  }
+  .GridItem2 {
+    border-bottom: 4px solid black;
+  }
+  .GridItem3 {
+    grid-column: 1/3;
+  }
+  .GridItem3 ul{
+    list-style: none;
+  }
+
+  /* The footer */ 
+  footer {
+    text-align: center;
+  }
+  .copyright{
+    margin: 10px;
+  }
+
+  /* The social media icons */
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  /* Responsive styling */
+  
+  @media screen and (max-width: 600px){
+    .FlexboxContainer, .flexboxcontainer1{flex-wrap: wrap;}
+    .FlexboxItem, .flexboxitem1{width: 90%; margin-left: auto; margin-right: auto;}
+    .navbar a{float: none; width: 15%;background-color: rgba(5, 5, 63, 0.747);
+    text-align: left; padding: 6px; font-size: 14px;}
+    .navbar{background: none;}
+    .navbar ul{margin: 0; padding: 0;}
+    .GridItem1 h3{font-size: 16px;}
+  }
