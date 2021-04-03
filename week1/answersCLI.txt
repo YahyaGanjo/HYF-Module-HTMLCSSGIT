@@ -1,0 +1,8 @@
+1* We can work with hidden files and folders in the CLI by simply initializing its name with
+a period (.) like :
+
+-creat a hidden file ---> touch .FileName.txt / for a folder ---> mkdir .FolderName
+
+2* By the following command : mkdir -p FolderName/FN1/FN2
+
+3* Using echo with the -n switch : echo -n second message >> file.txt
