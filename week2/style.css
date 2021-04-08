@@ -4,18 +4,19 @@
     box-sizing: border-box;
 }
 
-main {
-    margin: 20px;
+body {
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
 }
 li {
     list-style: none;
 }
 img {
-    width: 200px;
+    width: 220px;
 }
 h2, h1 {
-    text-align: center;
-    margin: 20px;
+    padding: 30px;
 }
 
 .grid-floats .grid-item:first-child {
@@ -27,8 +28,15 @@ h2, h1 {
 }
 .grid-item {
     width: 25%;
-    height: 60vh;
+    height: 25em;
     padding: 10px;
+    transition: background-color 1s;
+}
+.grid-item:hover {
+    border: 2px solid rgb(145, 145, 145);
+    text-shadow: 5px 5px 7px rgb(20, 19, 19);
+    box-shadow: 2px 6px 10px 2px rgba(0, 0, 0, 0.2), 4px 10px 20px 4px rgba(0, 0, 0, 0.19);
+    background-color: white;
 }
 
 section + section {clear: both;}
@@ -39,13 +47,13 @@ section + section {clear: both;}
 }
 
 @media screen and (max-width: 1024px) and (min-width: 600px) {
-.grid-item {width: 33.3%; height: auto;}
-img {max-width: 30vw;}
+.grid-item {width: 33.3%;}
+img {max-width: 28vw;}
 .grid-floats .grid-item:nth-child(2) {width: 50%;}
 }
 
 @media screen and (max-width: 600px) {
     .grid-item {width: 100%; height: auto; text-align: center;}
-    img{max-width: 60vw;}
+    img{max-width: 80vw;}
     .grid-floats .grid-item:first-child {width: 100%;}
 }
