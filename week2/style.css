@@ -5,7 +5,7 @@
 }
 
 body {
-    font: 1.2em 'Crimson Text', serif;
+    font: 1.4em 'Crimson Text', serif;
     margin: 10px;
     text-align: center;
     background-color: rgb(241, 241, 241);
@@ -18,6 +18,9 @@ img {
 }
 h2, h1 {
     padding: 30px;
+    border-radius: 25px;
+    border: 2px solid #a4a5a3;
+    background: rgb(207, 218, 218);
 }
 
 .grid-floats .grid-item:first-child {
