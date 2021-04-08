@@ -11,15 +11,14 @@ li {
     list-style: none;
 }
 img {
-    width: 150px;
-    float: right;
+    width: 200px;
 }
 h2, h1 {
     text-align: center;
     margin: 20px;
 }
 
-.grid-floats > .grid-item:first-child {
+.grid-floats .grid-item:first-child {
     width: 50%;
 }
     
@@ -28,8 +27,8 @@ h2, h1 {
 }
 .grid-item {
     width: 25%;
-    height: 35vh;
-    padding: 10px 10px 20px 10px;
+    height: 60vh;
+    padding: 10px;
 }
 
 section + section {clear: both;}
@@ -39,4 +38,14 @@ section + section {clear: both;}
     flex-flow: row wrap;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+.grid-item {width: 33.3%; height: auto;}
+img {max-width: 30vw;}
+.grid-floats .grid-item:nth-child(2) {width: 50%;}
+}
 
+@media screen and (max-width: 600px) {
+    .grid-item {width: 100%; height: auto; text-align: center;}
+    img{max-width: 60vw;}
+    .grid-floats .grid-item:first-child {width: 100%;}
+}
