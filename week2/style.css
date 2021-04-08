@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 20px;
+}
+li {
+    list-style: none;
+}
+.grid-item {
+    float: left;
+    width: 25%;
+    height: 35vh;
+    padding: 10px 10px 20px 10px;
+}
+
+.grid-floats > .grid-item:first-child {
+    width: 50%;
+}
+
+.grid-item img {
+    width: 150px;
+    float: right;
+}
+h2 + li {
+    width: 50%;
+    height: 40vh;
+}
