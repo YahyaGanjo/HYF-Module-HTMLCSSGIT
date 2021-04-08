@@ -10,7 +10,7 @@ main {
 li {
     list-style: none;
 }
-.grid-item {
+.grid-floats > .grid-item {
     float: left;
     width: 25%;
     height: 35vh;
@@ -21,10 +21,10 @@ li {
     width: 50%;
 }
 
-.grid-item img {
+img {
     width: 150px;
-    float: right;
 }
+
 h2 + li {
     width: 50%;
     height: 40vh;
