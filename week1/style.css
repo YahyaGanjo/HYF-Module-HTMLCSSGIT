@@ -1,4 +1,4 @@
-body {
+  body {
     margin: 0;
     height: 100%;
   }
@@ -7,20 +7,20 @@ body {
     box-sizing: border-box;
   }
 
+
   /* The navigation bar */
 
   .navbar {
+    display: flex;
     background-color: rgba(5, 5, 63, 0.808);
     position: fixed;
     top: 0;
     width: 100%;
+    margin: 0px;
+    padding: 0px;
   }
-  
   .navbar a {
-    float: left;
-    display: block;
     color: #f2f2f2;
-    text-align: center;
     padding: 4px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -42,11 +42,11 @@ body {
 
   /* The main personal info under the photo */
 
-  .personalInf {
+  .personalInfo {
     text-align: center;
     padding-bottom: 30px;
   }
-  .personalInf a, h2 {
+  .personalInfo a, h2 {
     background-color: rgba(5, 5, 63, 0.747);
     border-radius: 40%;
     font-size: 20px;
@@ -65,7 +65,7 @@ body {
   .FlexboxItem {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 0 12px;
-    width: 270px;
+    width: 33%;
     flex-grow: 1;
     margin: 10px;
   }
@@ -141,58 +141,58 @@ body {
   /* The footer */ 
   footer {
     text-align: center;
+    padding-bottom: 20px;
   }
   .copyright{
     margin: 10px;
   }
 
   /* The social media icons */
-  .fa {
-    padding: 20px;
+  footer a.fa {
     font-size: 30px;
-    width: 30px;
+    width: 50px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
   }
   
-  .fa:hover {
+  footer a.fa:hover {
       opacity: 0.7;
   }
 
-  .fa-facebook {
+  footer a.fa-facebook {
     background: #3B5998;
     color: white;
   }
   
-  .fa-twitter {
+  footer a.fa-twitter {
     background: #55ACEE;
     color: white;
   }
   
-  .fa-linkedin {
+  footer a.fa-linkedin {
     background: #007bb5;
     color: white;
   }
   
-  .fa-youtube {
+  footer a.fa-youtube {
     background: #bb0000;
     color: white;
   }
   
-  .fa-instagram {
+  footer a.fa-instagram {
     background: #125688;
     color: white;
   }
 
   /* Responsive styling */
   
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 900px){
+    .navbar{display: block;}
     .FlexboxContainer, .flexboxcontainer1{flex-wrap: wrap;}
     .FlexboxItem, .flexboxitem1{width: 90%; margin-left: auto; margin-right: auto;}
-    .navbar a{float: none; width: 15%;background-color: rgba(5, 5, 63, 0.747);
-    text-align: left; padding: 6px; font-size: 14px;}
-    .navbar{background: none;}
-    .navbar ul{margin: 0; padding: 0;}
     .GridItem1 h3{font-size: 16px;}
+    .FlexboxItem table tr {}
+    /* this to make the content of "Basic Information"-box stack vertically at screens with less than 350px width */ 
+    .FlexboxItem table tr{display: flex; flex-flow: row wrap; justify-content: center;}
   }
