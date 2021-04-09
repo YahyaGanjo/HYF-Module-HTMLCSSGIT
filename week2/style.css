@@ -5,7 +5,6 @@
 }
 
 body {
-    font: 1em 'Crimson Text', serif;
     margin: 10px;
     text-align: center;
 }
@@ -17,6 +16,7 @@ img {
 }
 h2, h1 {
     padding: 20px;
+    margin-bottom: 30px;
     border-radius: 25px;
     border: 2px solid #a4a5a3;
     background: rgb(207, 218, 218);
@@ -33,10 +33,12 @@ h2, h1 {
     width: 25%;
     height: 24em;
     padding: 10px;
+    margin-bottom: 10px;
     transition: background-color 1s;
 }
 .grid-item:hover {
     border: 2px solid rgb(0, 0, 0);
+    border-radius: 8%;
     text-shadow: 5px 5px 7px rgb(20, 19, 19);
     box-shadow: 2px 6px 10px 2px rgba(0, 0, 0, 0.2), 4px 10px 20px 4px rgba(0, 0, 0, 0.19);
     background-color: rgb(80, 80, 80);
@@ -53,7 +55,7 @@ section + section {clear: both;}
 
 @media screen and (max-width: 1024px) and (min-width: 600px) {
 .grid-item {width: 33.3%;}
-img {max-width: 28vw;}
+img {max-width: 25vw;}
 .grid-floats .grid-item:nth-child(2) {width: 50%;}
 }
 
