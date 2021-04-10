@@ -1,3 +1,9 @@
+/* Styling this website will be divided into 3 parts */
+
+/* 1-- at screen with more than 1024px width : */
+
+/* Calling the fonts files to use them later */
+
 @font-face {
     font-family: 'Roboto Mono', monospace;
     src: url(./fonts/roboto-mono-v13-latin-ext_latin-regular.woff2) format('woff2'),
@@ -19,31 +25,46 @@ body {
 li {
     list-style: none;
 }
+
+/* Giving a fixed unified dimensions to all images */
+
 img {
     width: 220px;
 }
 h2, h1 {
     padding: 20px;
     margin-bottom: 30px;
-    border-radius: 25px;
+    border-radius: 20px;
     border: 2px solid #a4a5a3;
     background: rgb(207, 218, 218);
 }
+
+/* Fixing the width of the very first element from the floats grid */
 
 .grid-floats .grid-item:first-child {
     width: 50%;
 }
     
+/* The float grid */
+
 .grid-floats > .grid-item {
     float: left;
 }
+
+/* General style properties to all grid items */
+
 .grid-item {
-    width: 25%;
+    width: 24%;
     height: 26em;
+    margin-bottom: 10px;
+    transition: background-color 1s;
     padding: 10px;
     margin-bottom: 10px;
     transition: background-color 1s;
 }
+
+/* Grid items at hover status */
+
 .grid-item:hover {
     border: 2px solid rgb(0, 0, 0);
     border-radius: 8%;
@@ -54,18 +75,26 @@ h2, h1 {
     transform: scale(1.1, 1.1);
 }
 
+/* Removing the float effect */
+
 section + section {clear: both;}
+
+/* The flex grid */
 
 .grid-flex {
     display: flex;
     flex-flow: row wrap;
 }
 
+/* 2-- at screen width between 600 and 1024px */
+
 @media screen and (max-width: 1024px) and (min-width: 600px) {
 .grid-item {width: 33.3%;}
 img {max-width: 25vw;}
 .grid-floats .grid-item:nth-child(2) {width: 50%;}
 }
+
+/* 3-- at screen with less than 600px width */ 
 
 @media screen and (max-width: 600px) {
     .grid-item {width: 100%; text-align: center;}
