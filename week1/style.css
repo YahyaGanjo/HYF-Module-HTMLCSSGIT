@@ -28,7 +28,7 @@
 
   /* The header containing personal image and background */
   header {
-    background-image: url('tech\ background.jpg');
+    background-image: url('images/tech\ background.jpg ');
     background-size: 100% 70%;
     background-repeat: no-repeat;
   }
@@ -139,54 +139,28 @@
   }
 
   /* The footer */ 
-  footer {
-    text-align: center;
-    padding-bottom: 20px;
-  }
-  .copyright{
-    margin: 10px;
-  }
 
-  /* The social media icons */
-  footer a.fa {
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
+  .social-media-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  footer a.fa:hover {
-      opacity: 0.7;
+  .social-media-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    margin-left: 1em;
+    margin-right: 1em;  
+    cursor: pointer;
   }
+  
+/* responsive styling */
 
-  footer a.fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  footer a.fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  
-  footer a.fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  
-  footer a.fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
-  
-  footer a.fa-instagram {
-    background: #125688;
-    color: white;
-  }
-
-  /* Responsive styling */
-  
   @media screen and (max-width: 900px){
     .navbar{display: block;}
     .FlexboxContainer, .flexboxcontainer1{flex-wrap: wrap;}
@@ -195,4 +169,5 @@
     .FlexboxItem table tr {}
     /* this to make the content of "Basic Information"-box stack vertically at screens with less than 350px width */ 
     .FlexboxItem table tr{display: flex; flex-flow: row wrap; justify-content: center;}
+    .social-media-btn {margin: 0 5px;}
   }
