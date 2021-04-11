@@ -2,6 +2,13 @@
 
 /* 1-- at screen with more than 1024px width : */
 
+/* The font-face property */ 
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url(cormorant-upright-cufonfonts/CormorantUpright-Medium.ttf);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -10,6 +17,7 @@
 
 body {
     text-align: center;
+    font-family: 'MyWebFont';
 }
 
 /* Giving a fixed unified dimensions to all images */
@@ -105,7 +113,7 @@ img {max-width: 25vw;}
 
     /* one element per row , I also modified the height to avoid overflow at very narrow screen (less than 350px width) */ 
 
-    .grid-item {width: 100%; height: 30em; text-align: center;}
+    .grid-item {width: 100%; height: 31em; text-align: center;}
     img{max-width: 60vw;}
 
     /* bringing the first item to its normal status */
