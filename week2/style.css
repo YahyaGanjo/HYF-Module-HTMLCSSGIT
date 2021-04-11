@@ -6,9 +6,9 @@
 
 @font-face {
     font-family: 'Roboto Mono', monospace;
-    src: url(./fonts/roboto-mono-v13-latin-ext_latin-regular.woff2) format('woff2'),
-         url(./fonts/roboto-mono-v13-latin-ext_latin-regular.woff) format('woff'),
-         url(./fonts/roboto-mono-v13-latin-ext_latin-regular.ttf) format('truetype');
+    src: url(fonts/roboto-mono-v13-latin-ext_latin-regular.woff2) format('woff2'),
+         url(fonts/roboto-mono-v13-latin-ext_latin-regular.woff) format('woff'),
+         url(fonts/roboto-mono-v13-latin-ext_latin-regular.ttf) format('truetype');
   }
 
 * {
@@ -45,12 +45,12 @@ h2, h1 {
 
 .grid-item {
     width: 25%;
-    height: 53vh;
+    height: 50vh;
     margin-bottom: 10px;
-    transition: background-color 1s;
     padding: 10px;
     margin-bottom: 10px;
-    transition: background-color 1s;
+    transition: background-color 1.5s;
+    cursor: pointer;
 }
 
 /* Grid items at hover status */
