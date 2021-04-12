@@ -80,7 +80,7 @@ ul {
 
 /* I added this lately since some borders of grid-items were broken at both sides of the page left and right (on hover) */
 
-section {
+section, h1 {
     margin: 0px 10px 20px 20px;
 }
     
