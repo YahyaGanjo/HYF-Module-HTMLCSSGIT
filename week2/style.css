@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "MyWebFont";
-  src: url(cormorant-upright-cufonfonts/CormorantUpright-Medium.ttf);
+  src: url(the-font-folder/CormorantUpright-Medium.ttf);
 }
 
 * {
