@@ -2,142 +2,154 @@
 
 /* 1-- at screen with more than 1024px width : */
 
-/* The font-face property */ 
+/* The font-face property */
 
 @font-face {
-    font-family: 'MyWebFont';
-    src: url(cormorant-upright-cufonfonts/CormorantUpright-Medium.ttf);
+  font-family: "MyWebFont";
+  src: url(cormorant-upright-cufonfonts/CormorantUpright-Medium.ttf);
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    text-align: center;
-    font-family: 'MyWebFont';
-    font-size: 20px;
-
+  text-align: center;
+  font-family: "MyWebFont";
+  font-size: 20px;
 }
 
 /* Giving a fixed unified dimensions to all images */
 
 img {
-    width: 220px;
+  width: 220px;
 }
 
-h2, h1 {
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 20px;
-    border: 2px solid #000000;
-    background-color: rgb(80, 80, 80);
-    color: white;
+h2,
+h1 {
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border: 2px solid #000000;
+  background-color: rgb(80, 80, 80);
+  color: white;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* General style properties to all grid items in both parts */
 
 .grid-item {
-    width: 25%;
-    height: 24em;
-    margin-bottom: 10px;
-    padding: 10px;
-    transition: background-color 1.5s;
-    cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 2px solid transparent ;
+  width: 25%;
+  height: 24em;
+  margin-bottom: 10px;
+  padding: 10px;
+  transition: background-color 1.5s;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 2px solid transparent;
 }
 
 /* Grid items at hover status */
 
 .grid-item:hover {
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 5%;
-    text-shadow: 5px 5px 7px rgb(20, 19, 19);
-    box-shadow: 2px 6px 10px 2px rgba(0, 0, 0, 0.2), 4px 10px 20px 4px rgba(0, 0, 0, 0.19);
-    background-color: rgb(80, 80, 80);
-    color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5%;
+  text-shadow: 5px 5px 7px rgb(20, 19, 19);
+  box-shadow: 2px 6px 10px 2px rgba(0, 0, 0, 0.2),
+    4px 10px 20px 4px rgba(0, 0, 0, 0.19);
+  background-color: rgb(80, 80, 80);
+  color: rgb(255, 255, 255);
 }
 
 /* Fixing the width of the very first element from the floats grid */
 
 .grid-floats .grid-item:first-child {
-    width: 50%;
+  width: 50%;
 }
 
 /* Removing the float effect */
 
 .grid-floats::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* I added this lately since some borders of grid-items were broken at both sides of the page left and right (on hover) */
 
-section, h1 {
-    margin: 0px 10px 20px 20px;
+section,
+h1 {
+  margin: 0px 10px 20px 20px;
 }
-    
+
 /* The float grid */
 
 .grid-floats > .grid-item {
-    float: left;
+  float: left;
 }
 
 /* The flex grid */
 
 .grid-flex {
-    display: flex;
-    flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 /* Fixing the width of the very first element from the flex grid */
 
 .grid-flex .grid-item:first-child {
-    flex-basis: 50%;
+  flex-basis: 50%;
 }
-
 
 /* 2-- at screen width between 600 and 1024px */
 
 @media screen and (max-width: 1024px) and (min-width: 601px) {
+  /* making rows of 3 elements */
 
-/* making rows of 3 elements */ 
+  .grid-item {
+    width: 33%;
+    font-size: 17px;
+  }
+  img {
+    max-width: 25vw;
+  }
 
-.grid-item {width: 33%; font-size: 17px;}
-img {max-width: 25vw;}
+  /* the 2nd item of the 1st row */
 
-/* the 2nd item of the 1st row */ 
+  .grid-floats .grid-item:nth-child(2) {
+    width: 50%;
+  }
 
-.grid-floats .grid-item:nth-child(2) {width: 50%;}
-
-.grid-flex .grid-item:nth-child(2) {flex-basis: 50%;}
-
+  .grid-flex .grid-item:nth-child(2) {
+    flex-basis: 50%;
+  }
 }
 
-
-/* 3-- at screen with less than 600px width */ 
+/* 3-- at screen with less than 600px width */
 
 @media screen and (max-width: 600px) {
+  /* one element per row , I also modified the font size */
 
-    /* one element per row , I also modified the font size */ 
+  .grid-item {
+    width: 100%;
+    font-size: 22px;
+  }
+  img {
+    max-width: 60vw;
+  }
 
-    .grid-item {
-        width: 100%;
-        font-size: 22px;
-    }
-    img{max-width: 60vw;}
+  /* bringing the first items of both grids to their normal status */
 
-    /* bringing the first items of both grids to their normal status */
-    .grid-floats .grid-item:first-child {width: 100%;}
+  .grid-floats .grid-item:first-child {
+    width: 100%;
+  }
 
-    .grid-flex .grid-item:first-child { flex-basis: 100%;}
-
+  .grid-flex .grid-item:first-child {
+    flex-basis: 100%;
+  }
 }
