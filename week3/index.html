@@ -10,15 +10,47 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- My own stylesheet-->
     <link rel="stylesheet" href="style.css">
-
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Patreon.com</title>
+    <title>Patreon Home Page</title>
   </head>
 
   <body>
-
+    <div class="navbar-fixed">
+      <nav class="pink">
+        <div class="container">
+          <div class="navbar-wrapper">
+            <a href="#" class="right">
+              <img src="images/logo.png" width="55px" class="circle"></a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="hide-on-med-and-down">
+              <li><a href="#for-creators" >For creators</a></li>
+              <li><a href="#product">Product</a></li>
+              <li><a href="#resources">Resources</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#starter-kits">Starter Kits</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav pink" id="mobile-nav">
+      <li><a href="#product">Product</a></li>
+      <li><a href="#for-creators">For creators</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#starter">Starter Kits</a></li>
+    </ul>
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      // Side-navbar
+      const sideNav = document.querySelector('.sidenav');
+      M.Sidenav.init(sideNav, {});
+
+    </script>
   </body>
 </html>
