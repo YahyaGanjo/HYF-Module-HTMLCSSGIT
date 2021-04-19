@@ -1,7 +1,7 @@
 /* customize some important rules from the nav part*/
 /* important to minimize the logo */
-.dropdown-content.pink a img {
-  padding: 10px;
+nav.pink a img {
+  padding: 10px !important;
 }
 /* important to gather the Navbar elements and reduce the spaces between them */
 .navbar-wrapper ul li a.btn-flat {
@@ -16,7 +16,39 @@
   margin-right: 5px !important;
   font-size: 1.5rem !important;
 }
-/* to uify the size of the 2 boxes in the header */
+/* to unify the size of the 2 boxes in the header */
 .Header-box {
   height: 20vh;
+}
+
+/* styling My own html-flexbox- */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+.title-flex-container {
+  width: 90%;
+  justify-self: center;
+  text-align: center;
+  font-size: 40px;
+  color: red;
+  margin: 20px 0;
+}
+.flex-item-horizontal {
+  width: 30%;
+}
+.flex-item-horizontal img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+  .flex-item-horizontal {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .flex-item-horizontal {
+    width: 90%;
+  }
 }
