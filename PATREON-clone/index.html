@@ -21,9 +21,11 @@
     <nav class="pink">
       <a href="#home" class="left">
         <img src="images/logo.png" width="65px" class="circle">
-        <a href="#home" class="brand-logo center hide-on-large-only hide-on-small-only">PATREON</a>
+        <a href="#home" class="brand-logo center hide-on-large-only
+         hide-on-small-only">PATREON</a>
       </a>
-      <a class="waves-effect waves-light btn-large pink darken-4 white-text right" style="height: 100%;">
+      <a class="waves-effect waves-light btn-large pink darken-4
+       white-text right" style="height: 100%;">
         <i class="material-icons right">login</i>Log In
       </a>
       <div class="container">
@@ -32,16 +34,25 @@
             <i class="material-icons">menu</i>
           </a>
           <ul class="hide-on-med-and-down">
-            <li><a class='dropdown-trigger btn-flat white-text' href='#' data-target='dropdown1'>
-              <i class="material-icons right">expand_more</i>Product</a></li>
-            <ul id='dropdown1' class='dropdown-content'>
+      <!--Product-->
+            <li>
+              <a class='dropdown-trigger btn-flat white-text'
+               href='#' data-target='dropdown1'>
+              <i class="material-icons right">expand_more</i>Product
+              </a>
+            </li>
+             <ul id='dropdown1' class='dropdown-content'>
               <li><a href="#!"><h6>Lite</h6>
-                <p>Simple tools to set up recurring support from your fans</p></a></li>
+                <p>Simple tools to set up recurring support from your fans</p></a>
+              </li>
               <li><a href="#!"><h6>Pro</h6>
-                <p>All the tools to build and grow thriving membership business</p></a></li>
+                <p>All the tools to build and grow thriving membership business</p></a>
+              </li>
               <li><a href="#!"><h6>Premium</h6>
-                <p>For established creators and creative businesses</p></a></li>
-            </ul>
+                <p>For established creators and creative businesses</p></a>
+              </li>
+             </ul>
+      <!--For Creators-->
             <li><a class='dropdown-trigger btn-flat white-text' href='#' data-target='dropdown2'>
               <i class="material-icons right">expand_more</i>For creators</a></li>
             <ul id='dropdown2' class='dropdown-content'>
@@ -57,6 +68,7 @@
               <li><a href="#!"><i class="material-icons">business</i>Local Businesses</a></li>
               <li><a href="#!"><i class="material-icons">create</i>Creators-of-all-kinds</a></li>
             </ul>
+      <!--Resources-->
             <li><a class='dropdown-trigger btn-flat white-text' href='#' data-target='dropdown3'>
               <i class="material-icons right">expand_more</i>Resources</a></li>
             <ul id='dropdown3' class='dropdown-content'>
@@ -67,6 +79,7 @@
               <li><a href="#!">App Directory</a></li>
               <li><a href="#!">Help Center & FAQ</a></li>
             </ul>
+      <!--Pricing & Starter Kit-->
             <li><a href="#pricing" class="btn-flat white-text">Pricing</a></li>
             <li><a href="#starter-kits" class="btn-flat white-text">Starter Kits</a></li>
           </ul>
@@ -77,9 +90,10 @@
 
     <!-- Side Nav-->
     <ul class="sidenav pink collapsible" id="mobile-nav">
+      <!--Product-->
       <li>
         <div class="collapsible-header btn" href="#!">
-          <i class="material-icons left">expand_more</i>Production
+          <i class="material-icons left">expand_more</i>Product
         </div>
         <div class="collapsible-body ">
           <a href="#!"><h5 class="red-text">Lite</h5></a>
@@ -90,6 +104,7 @@
           <p>For established creators and creative businesses</p>
         </div>
       </li>
+      <!--For Creators-->
       <li>
         <div class="collapsible-header btn" href="#!">
           <i class="material-icons left">expand_more</i>For Creators
@@ -108,6 +123,7 @@
           <a href="#!" class="btn-flat red-text"><i class="material-icons left">create</i>Creators-of-all-kinds</a><br>
         </div>
       </li>
+      <!--Resources-->
       <li>
         <div class="collapsible-header btn" href="#!">
           <i class="material-icons left">expand_more</i>Resources
@@ -121,6 +137,7 @@
           <p href="#!">Help Center & FAQ</p>
         </div>
       </li>
+      <!--Pricing & Starter Kit-->
       <li><div class="collapsible-header btn" href="#!">Pricing</div></li>
       <li><div class="collapsible-header btn" href="#!">Starter Kit</div></li>
     </ul>
@@ -159,12 +176,14 @@
       M.Sidenav.init(sideNav, {});
     </script>
     <script>
+    // Drop down inside the navbar
       const dropDown = document.querySelectorAll('.dropdown-trigger');
       M.Dropdown.init(dropDown, {
         coverTrigger: false, constrainWidth: false
       });
     </script>
     <script>
+      // Collapsible inside the side-navbar
       const collaps = document.querySelectorAll('.collapsible');
       M.Collapsible.init(collaps, {});
     </script>

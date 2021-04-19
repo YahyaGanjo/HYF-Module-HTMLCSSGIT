@@ -1,19 +1,22 @@
-nav.pink a img {
+/* customize some important rules from the nav part*/
+/* important to minimize the logo */
+.dropdown-content.pink a img {
   padding: 10px;
 }
-
+/* important to gather the Navbar elements and reduce the spaces between them */
 .navbar-wrapper ul li a.btn-flat {
   margin: 0px !important;
 }
-
+/* to minimize the size of the dropdown content */
 .dropdown-content li a {
   font-size: 13px !important;
 }
-
+/* The same as the previous one */
 .dropdown-content li > a > i {
   margin-right: 5px !important;
   font-size: 1.5rem !important;
 }
+/* to uify the size of the 2 boxes in the header */
 .Header-box {
   height: 20vh;
 }
