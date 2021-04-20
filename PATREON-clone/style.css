@@ -6,16 +6,15 @@ nav.pink a img {
 }
 
 /* important to gather the Navbar elements and reduce the spaces between them */
-.navbar-wrapper ul li a.btn-flat {
+.navbar-wrapper ul li a {
   margin: 0px !important;
 }
 
 /* to minimize the size of the dropdown content */
 .dropdown-content li a {
   font-size: 13px !important;
+  color: white !important;
 }
-
-/* The same as the previous one */
 .dropdown-content li > a > i {
   margin-right: 5px !important;
   font-size: 1.5rem !important;
@@ -25,6 +24,13 @@ nav.pink a img {
 /* to unify the size of the 2 boxes in the header */
 .Header-box {
   height: 20vh !important;
+}
+
+/* to customize the search bar */
+.section-search input {
+  font-size: 18px !important;
+  width: 85% !important;
+  border: #f4f4f4 3px solid !important;
 }
 
 /* 3- The flexbox section -see how other ...- */
@@ -63,7 +69,10 @@ nav.pink a img {
   }
 }
 /* 4- The footer */
-/* adding a hover effect to the small links in the footer */
-footer .container .row .col > a:hover {
+/* adding text color to the small links in the footer */
+footer .container .row .col a {
+  color: white;
+}
+footer .container .row .col a:hover {
   color: rgb(248, 149, 165) !important;
 }
