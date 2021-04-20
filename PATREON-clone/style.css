@@ -27,7 +27,7 @@ nav.pink a img {
   height: 20vh !important;
 }
 
-/* styling My own html-flexbox part- */
+/* 3- The flexbox section -see how other ...- */
 .flex-container {
   display: flex;
   justify-content: space-around;
@@ -50,6 +50,7 @@ nav.pink a img {
   width: 100%;
 }
 
+/* Media query for the flexbox */
 @media screen and (max-width: 1024px) and (min-width: 601px) {
   .flex-item-horizontal {
     width: 45%;
@@ -60,4 +61,9 @@ nav.pink a img {
   .flex-item-horizontal {
     width: 90%;
   }
+}
+/* 4- The footer */
+/* adding a hover effect to the small links in the footer */
+footer .container .row .col > a:hover {
+  color: rgb(248, 149, 165) !important;
 }
