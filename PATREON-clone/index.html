@@ -251,6 +251,90 @@
       </div>
     </section>
 
+    <!-- The slider section-->
+    <section>
+      <div class="row">
+        <div class="slider col s12 l9 push-l3">
+      <ul class="slides">
+        <li>
+          <img src="images/podcasters.png" alt="podcasters">
+          <div>
+            <a href="#"><h3 class="caption red-text text-darken-4 left-align">Podcasters</h3></a>
+          </div>
+        </li>
+        <li>
+          <img src="images/videocreators.png" alt="video_creators">
+          <div>
+            <a href="#"><h3 class="caption red-text text-darken-4 right-align">Video Creators</h3></a>
+          </div>
+        </li>
+        <li>
+          <img src="images/musicians.png" alt="musicians">
+          <div>
+            <a href="#"><h3 class="caption red-text text-darken-4 left-align">Musicians</h3></a>
+          </div>
+        </li>
+        <li>
+          <img src="images/visualartists.png" alt="visual_artists">
+          <div>
+            <a href="#"><h3 class="caption red-text text-darken-4 center-align">Visual Artists</h3></a>
+          </div>
+        </li>
+        <li>
+          <img src="images/communities.png" alt="communities">
+          <div>
+            <a href="#"><h3 class="caption red-text text-darken-4 left-align">Communities</h3></a>
+          </div>
+        </li>
+        <li>
+          <img src="images/writers.png" alt="writers">
+          <div>
+            <a href="#"><h3 class="caption red-text text-darken-4 center-align">Writers & Journalists</h3></a>
+          </div>
+        </li>
+        <li>
+          <img src="images/gamingcreators.png" alt="gaming_creators">
+          <div>
+            <a href="#"><h3 class="caption red-text text-darken-4 right-align">Gaming Creators</h3></a>
+          </div>
+        </li>
+        <li>
+          <img src="images/nonprofit.png" alt="nonprofit">
+          <div>
+            <a href="#"><h3 class="caption red-text text-darken-4 left-align">Nonprofit</h3></a>
+          </div>
+        </li>
+        <li>
+          <img src="images/tutorials.png" alt="tutorials">
+          <div>
+            <a href="#"><h3 class="caption red-text text-darken-4 left-align">Tutorials and Education</h3></a>
+          </div>
+        </li>
+        <li>
+          <img src="images/creatorsofallkinds.png" alt="creators_of_all_kinds">
+          <div>
+            <a href="#"><h3 class="caption red-text text-darken-4 left-align">Creators-of-all-kinds</h3></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col s12 l2 pull-l8 hide-on-med-and-down ">
+      <ul>
+        <li><a href="#" class="red-text"><h6>Podcasters</h6></a></li>
+        <li><a href="#" class="red-text"><h6>Video Creators</h6></a></li>
+        <li><a href="#" class="red-text"><h6>Musicians</h6></a></li>
+        <li><a href="#" class="red-text"><h6>Visual Artists</h6></a></li>
+        <li><a href="#" class="red-text"><h6>Communities</h6></a></li>
+        <li><a href="#" class="red-text"><h6>Writers & Journalists</h6></a></li>
+        <li><a href="#" class="red-text"><h6>Gaming Creators</h6></a></li>
+        <li><a href="#" class="red-text"><h6>Nonprofit</h6></a></li>
+        <li><a href="#" class="red-text"><h6>Tutorials and Education</h6></a></li>
+        <li><a href="#" class="red-text"><h6>Creators-of-all-kinds</h6></a></li>
+      </ul>
+    </div>
+    </div>
+    </section>
+
     <!-- Flexbox section : See how other ...-->
     <section class="flex-container">
       <div class="title-flex-container">See how other creators use Patreon</div>
@@ -377,6 +461,13 @@
       // Collapsible inside the side-navbar
       const collaps = document.querySelectorAll('.collapsible');
       M.Collapsible.init(collaps, {});
+    </script>
+    <script>
+      // Slider
+      const slider = document.querySelector('.slider');
+      M.Slider.init(slider, {
+        transition: 500
+      });
     </script>
   </body>
 </html>

@@ -33,7 +33,7 @@ nav.pink a img {
   border: #f4f4f4 3px solid !important;
 }
 
-/* 3- The flexbox section -see how other ...- */
+/* 4- The flexbox section -see how other ...- */
 .flex-container {
   display: flex;
   justify-content: space-around;
@@ -68,7 +68,7 @@ nav.pink a img {
     width: 90%;
   }
 }
-/* 4- The footer */
+/* 5- The footer */
 /* adding text color to the small links in the footer */
 footer .container .row .col a {
   color: white;
