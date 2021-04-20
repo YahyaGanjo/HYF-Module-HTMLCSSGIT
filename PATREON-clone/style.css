@@ -1,32 +1,39 @@
 /* customize some important rules from the nav part*/
+/* 1- The NavBar */
 /* important to minimize the logo */
 nav.pink a img {
   padding: 10px !important;
 }
+
 /* important to gather the Navbar elements and reduce the spaces between them */
 .navbar-wrapper ul li a.btn-flat {
   margin: 0px !important;
 }
+
 /* to minimize the size of the dropdown content */
 .dropdown-content li a {
   font-size: 13px !important;
 }
+
 /* The same as the previous one */
 .dropdown-content li > a > i {
   margin-right: 5px !important;
   font-size: 1.5rem !important;
 }
+
+/* 2- The Header */
 /* to unify the size of the 2 boxes in the header */
 .Header-box {
-  height: 20vh;
+  height: 20vh !important;
 }
 
-/* styling My own html-flexbox- */
+/* styling My own html-flexbox part- */
 .flex-container {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
 }
+
 .title-flex-container {
   width: 90%;
   justify-self: center;
@@ -35,6 +42,7 @@ nav.pink a img {
   color: red;
   margin: 20px 0;
 }
+
 .flex-item-horizontal {
   width: 30%;
 }
@@ -47,6 +55,7 @@ nav.pink a img {
     width: 45%;
   }
 }
+
 @media screen and (max-width: 600px) {
   .flex-item-horizontal {
     width: 90%;
