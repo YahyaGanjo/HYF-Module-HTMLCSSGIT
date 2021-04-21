@@ -39,7 +39,6 @@ nav.pink a img {
   justify-content: space-around;
   flex-flow: row wrap;
 }
-
 .title-flex-container {
   width: 90%;
   justify-self: center;
@@ -48,7 +47,6 @@ nav.pink a img {
   color: red;
   margin: 20px 0;
 }
-
 .flex-item-horizontal {
   width: 30%;
 }
@@ -62,12 +60,12 @@ nav.pink a img {
     width: 45%;
   }
 }
-
 @media screen and (max-width: 600px) {
   .flex-item-horizontal {
     width: 90%;
   }
 }
+
 /* 4- The footer */
 /* adding text color to the small links in the footer */
 footer .container .row .col a {
