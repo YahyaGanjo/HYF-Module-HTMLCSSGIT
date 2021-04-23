@@ -3,6 +3,7 @@
 /* important to minimize the logo */
 nav.pink a img {
   padding: 10px !important;
+  width: 50px;
 }
 
 /* important to gather the Navbar elements and reduce the spaces between them */
